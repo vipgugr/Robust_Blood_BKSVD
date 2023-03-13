@@ -9,8 +9,23 @@ Hematoxylin and Eosin (H\&E) color variation between histological images from di
 Keywords: Bayesian modelling; Histological images; Blind Color Deconvolution; Blood Detection
 
 ## Disclaimer 
+
+- Check Example_Robust_BKSVD.m for an use case of this method.
+
 - Check our [BKSVD repository](https://github.com/vipgugr/BKSVD) for the original paper "Bayesian K-SVD for H and E blind color deconvolution. Applications to stain normalization, data augmentation and cancer classification"
 
 - Notice that this version detects blood and it is more robust to estimate the H&E colors, however, it is not optimized for stain normalization and might produce noisy results.
 
+## Data
 
+- The synthetic Blood Dataset is generated from the data in:
+ N. Alsubaie et al. Stain deconvolution using statistical analysis of multi-resolution stain colour representation. PLOS ONE, 12:e0169875, 2017
+
+- The TCGA dataset is collected from images in the [The Cancer Genome Atlas](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga)
+  - TCGA-A7-A5ZV-DX1
+  - TCGA-AC-A2QH-DX1
+   - TCGA-AQ-A54N-DX1
+  - TCGA-E2-A14X-DX1
+   - TCGA-GM-A3XL-DX1
+   - TCGA-OL-A97C-DX1
+   - TCGA-S3-AA10-DX1
